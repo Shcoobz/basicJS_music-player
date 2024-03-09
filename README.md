@@ -1,4 +1,4 @@
-# Music Player
+# [LIVE DEMO](https://shcoobz.github.io/music-player/) -> Music Player
 
 ![Project Image](img/music-player.png)
 
