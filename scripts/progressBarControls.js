@@ -1,31 +1,20 @@
+const formatTime = (time) => {
+  const minutes = Math.floor(time / 60);
+  const seconds = Math.floor(time % 60)
+    .toString()
+    .padStart(2, '0');
+  return `${minutes}:${seconds}`;
+};
+
 function updateProgressBar(isPlaying, music, currentTimeEl, durationEl, progress) {
-  if (isPlaying) {
-    const { duration, currentTime } = music;
-    // Update progress bar width
-    const progressPercent = (currentTime / duration) * 100;
-    progress.style.width = `${progressPercent}%`;
-    // Calculate display for duration
-    const durationMinutes = Math.floor(duration / 60);
-    let durationSeconds = Math.floor(duration % 60);
+  if (!isPlaying) return;
 
-    if (durationSeconds < 10) {
-      durationSeconds = `0${durationSeconds}`;
-    }
+  const { duration, currentTime } = music;
+  const progressPercent = (currentTime / duration) * 100;
+  progress.style.width = `${progressPercent}%`;
 
-    // Delay switching duration Element to avoid NaN
-    if (durationSeconds) {
-      durationEl.textContent = `${durationMinutes}:${durationSeconds}`;
-    }
-
-    // Calculate display for current time
-    const currentMinutes = Math.floor(currentTime / 60);
-    let currentSeconds = Math.floor(currentTime % 60);
-
-    if (currentSeconds < 10) {
-      currentSeconds = `0${currentSeconds}`;
-    }
-    currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`;
-  }
+  durationEl.textContent = formatTime(duration);
+  currentTimeEl.textContent = formatTime(currentTime);
 }
 
 function setProgressBar(e, music, progressContainer) {
