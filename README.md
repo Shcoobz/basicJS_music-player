@@ -4,7 +4,7 @@
 
 ## Summary
 
-Welcome to Music Player! This application provides a simple and intuitive interface for playing music tracks. It features a minimalist design, easy navigation between songs, and a responsive layout for different screen sizes.
+Music Player provides a simple and intuitive interface for playing music tracks. It features a minimalist design, easy navigation between songs, and a responsive layout for different screen sizes.
 
 The core functionality includes:
 
