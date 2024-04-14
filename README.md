@@ -1,6 +1,6 @@
-# [LIVE DEMO](https://shcoobz.github.io/music-player/) -> Music Player
+# basicJS_Music Player: [LIVE DEMO](https://shcoobz.github.io/basicJS_music-player/)
 
-![Project Image](img/music-player.png)
+![Project Image](img/basicJS_music-player.png)
 
 ## Summary
 
