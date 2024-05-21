@@ -43,4 +43,4 @@ A progress bar shows the current playback status of the song. Users can click or
 
 _Note: This document provides an overview of Music Player. For detailed instructions and more information, please refer to the source code documentation._
 
-_This project has been enhanced and converted into a React-based application, which can be viewed [here](https://github.com/Shcoobz/react_music-player/). The React version integrates more advanced state management and component-based architecture for improved maintainability and scalability._
+_This project has been enhanced and converted into a React-based application, which can be viewed [here](https://github.com/Shcoobz/advancedJS_music-player/). The React version integrates more advanced state management and component-based architecture for improved maintainability and scalability._
